@@ -77,4 +77,7 @@ FlazorApp::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Suggested manual setup from devise install
+  config.action_mailer.default_url_options = { :host => 'ip-172-31-15-210' }
 end
