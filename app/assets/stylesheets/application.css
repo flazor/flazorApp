@@ -12,12 +12,19 @@
  *= require_tree .
  *
  */
-header nav ul {
+body {
+  min-width: 550px;
+}
+header {
+  height: 80px;
+  width: 100%;
+}
+nav ul {
 list-style: none;
 margin: 0 0 2em;
 padding: 0;
 }
-header nav ul li {
+nav ul li {
 display: inline;
 }
 #flash_notice, #flash_alert {
@@ -31,4 +38,9 @@ border: solid 1px #6C6;
 #flash_alert {
 background-color: #FCC;
 border: solid 1px #C66;
+}
+div#sign_in_status {
+border: solid 1px #000;
+float:right;
+width:200px;
 }

@@ -6,22 +6,33 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
-<!-- Header -->
-<a href="/dashboard">Dashboard</a> |
-<a href="/activities">Activities</a> | 
+ 
+<header style="display:block">
+  <div style="float: left">
+  <h1><a href="#">Run Stats Dashboard</a></h1>
+  </div>
+  <div id="sign_in_status">
+    <ul>
+      <%= render 'shared/navigation' %>
+    </ul>
+  </div>
+</header>
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="#">Dashboard</a></li>
+    <li><a href="#">Activities</a></li>
+  </ul>
+</nav>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-<ul>
-<%= render 'shared/navigation' %>
-</ul>
 <% flash.each do |name, msg| %>
 <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
 <% end %>
-
+<section>
 <%= yield %>
-
+</section>
+<footer><p><a href="#">contact</a> | <a href="#">privacy</a></p></footer>
 </body>
 </html>
