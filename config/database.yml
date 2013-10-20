@@ -14,7 +14,7 @@ development:
   database: flazorApp_development
   pool: 5
   username: root
-  password:
+  password: k1ngk0ng
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -26,7 +26,7 @@ test:
   database: flazorApp_test
   pool: 5
   username: root
-  password:
+  password: k1ngk0ng
   host: localhost
 
 production:
@@ -35,5 +35,5 @@ production:
   database: flazorApp_production
   pool: 5
   username: root
-  password:
+  password: k1ngk0ng
   host: localhost

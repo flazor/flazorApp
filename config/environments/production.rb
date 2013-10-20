@@ -79,5 +79,5 @@ FlazorApp::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Suggested manual setup from devise install
-  config.action_mailer.default_url_options = { :host => 'ip-172-31-15-210' }
+  config.action_mailer.default_url_options = { :host => '54.200.196.136' }
 end
