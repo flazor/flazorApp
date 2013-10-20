@@ -6,9 +6,4 @@ class HomeControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get –no-controller-specs" do
-    get :–no-controller-specs
-    assert_response :success
-  end
-
 end
